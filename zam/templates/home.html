@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center display-4 text-primary">Welcome to Zam Group Construction</h1>
+    <p class="lead text-center mb-5">
+        At Zam Group, we deliver top-notch construction and design solutions tailored to your needs. Our expertise spans across architecture, structural engineering, mechanical and electrical designs, and quantity surveying. Partner with us to turn your vision into reality with precision, innovation, and efficiency.
+    </p>
+
+    <section id="services" class="my-5">
+        <h2 class="text-center mb-4 text-success">Our Services</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Architectural Design</h3>
+                        <p class="card-text">
+                            Elevate your projects with our innovative architectural design services. From residential to commercial spaces, we create functional, aesthetically pleasing, and sustainable designs that bring your vision to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Structural Engineering</h3>
+                        <p class="card-text">
+                            Ensure the stability and safety of your structures with our advanced structural engineering solutions. We specialize in designing buildings and infrastructure that can withstand the test of time and environmental challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Mechanical Design</h3>
+                        <p class="card-text">
+                            Optimize efficiency and functionality with our mechanical design services. From HVAC systems to custom mechanical solutions, we provide designs that enhance comfort, performance, and energy efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Electrical Design</h3>
+                        <p class="card-text">
+                            Power up your projects with our comprehensive electrical design services. We design and implement reliable electrical systems for residential, commercial, and industrial projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Quantity Surveying</h3>
+                        <p class="card-text">
+                            Manage your construction costs effectively with our quantity surveying expertise. We provide accurate cost estimation, budget management, and contract administration to ensure your projects stay on track and within budget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="my-5">
+        <h2 class="text-center text-warning mb-4">Why Choose Zam Group Construction?</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Unmatched expertise across architecture, engineering, and surveying.</li>
+            <li class="list-group-item">Commitment to quality, innovation, and customer satisfaction.</li>
+            <li class="list-group-item">Comprehensive, end-to-end construction solutions.</li>
+            <li class="list-group-item">Experience working with residential, commercial, and industrial projects.</li>
+        </ul>
+    </section>
+
+    <section id="call-to-action" class="my-5 text-center">
+        <h2 class="mb-3 text-danger">Get Started Today!</h2>
+        <p>
+            Whether you're planning a new project or seeking expert advice, Zam Group Construction is here to help. Contact us today and let us make your construction dreams a reality.
+        </p>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+    </section>
+</div>
+{% endblock %}
