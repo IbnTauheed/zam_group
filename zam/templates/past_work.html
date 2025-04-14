@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,12 @@
 <body>
     <header class="bg-primary text-white text-center py-3">
         <h1>Our Past Work</h1>
+      <nav>
+          <a href="{% url 'home' %}" class="text-white me-3">Home</a>
+          <a href="{% url 'about' %}" class="text-white me-3">About Us</a>
+          <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
+      </nav>
+
         <p>Take a look at some of the amazing projects we've completed!</p>
     </header>
 
@@ -17,7 +24,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                      <img src="{% static 'images/pyth.png' %}" class="card-img-top" alt="Project 1">
                     <div class="card-body">
                         <h5 class="card-title">Residential Building</h5>
                         <p class="card-text">A modern and sustainable residential complex designed for urban living.</p>
@@ -26,7 +33,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <img src="{% static 'images/pyth.png' %}" class="card-img-top" alt="Project 2">
                     <div class="card-body">
                         <h5 class="card-title">Commercial Plaza</h5>
                         <p class="card-text">A state-of-the-art commercial plaza featuring retail and office spaces.</p>
@@ -35,7 +42,34 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                      <img src="{% static 'images/pyth.png' %}" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridge Construction</h5>
+                        <p class="card-text">An innovative and durable bridge built for heavy traffic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                      <img src="{% static 'images/musa.jpg' %}" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridge Construction</h5>
+                        <p class="card-text">An innovative and durable bridge built for heavy traffic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                      <img src="{% static 'images/musa.jpg' %}" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridge Construction</h5>
+                        <p class="card-text">An innovative and durable bridge built for heavy traffic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                      <img src="{% static 'images/musa.jpg' %}" class="card-img-top" alt="Project 6">
                     <div class="card-body">
                         <h5 class="card-title">Bridge Construction</h5>
                         <p class="card-text">An innovative and durable bridge built for heavy traffic.</p>

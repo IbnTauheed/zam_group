@@ -18,15 +18,9 @@
 </head>
 <body>
   <div class="container my-5">
-    <header class="bg-primary text-white py-3">
-        <div class="container">
-            <h1>About Us</h1>
-            <nav>
-                <a href="{% url 'home' %}" class="text-blue me-3">Home</a>
-                <a href="{% url 'about' %}" class="text-blue me-3">About Us</a>
-                <a href="{% url 'contact' %}" class="text-blue">Contact Us</a>
-            </nav>
-        </div>
+
+    <header>
+
     </header>
     <main class="container my-5">
         <section>
@@ -51,7 +45,10 @@
 
     <!-- Custom JavaScript -->
     <script src="{% static 'js/scripts.js' %}"></script>
+      </div>
 </body>
 </html>
-</div>
+
+
+
 {% endblock %}
